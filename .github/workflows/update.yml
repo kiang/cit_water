@@ -23,6 +23,9 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: ${{ steps.target.outputs.branch }}
+        env:
+          GIT_TRACE: 1
+          GIT_CURL_VERBOSE: 1
 
       - run: |
           git checkout -b gh-pages || git checkout gh-pages
