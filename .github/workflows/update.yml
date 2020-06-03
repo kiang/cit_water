@@ -14,8 +14,8 @@ jobs:
       - name: Determine which branch to checkout
         id: target
         run: |
-          if git ls-remote --exit-code https://github.com/${{ github.repository }} gh-page; then
-            echo "::set-output name=branch::gh-page"
+          if git ls-remote --exit-code https://github.com/${{ github.repository }} gh-pages; then
+            echo "::set-output name=branch::gh-pages"
           else
             echo "::set-output name=branch::master"
           fi
@@ -25,8 +25,8 @@ jobs:
           ref: ${{ steps.target.outputs.branch }}
 
       - run: |
-          git checkout -b gh-page || git checkout gh-page
+          git checkout -b gh-pages || git checkout gh-pages
           scripts/generate-geojson.bash
           git add .
           git -c user.name='auto commit' -c user.email='noreply@localhost' commit -m "auto update @ $(date -u +'%Y-%m-%d %H:%M:%S')"
-          git push origin gh-page:gh-page
+          git push origin gh-pages:gh-pages
