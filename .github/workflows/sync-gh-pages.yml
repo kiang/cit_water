@@ -1,0 +1,21 @@
+name: Update gh-pages with changes on master
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  merge-changes-from-master:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+
+      - name: Merge master
+        run: |
+          git remote update --prune
+          git -c user.name='auto commit' -c user.email='noreply@localhost' merge origin/master --no-edit
+          git push

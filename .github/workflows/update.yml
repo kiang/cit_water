@@ -1,0 +1,32 @@
+name: Update WRA data
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  push:
+    tags: 
+      - test.update*
+
+jobs:
+  generate-geojson:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Determine which branch to checkout
+        id: target
+        run: |
+          if git ls-remote --exit-code https://github.com/${{ github.repository }} gh-page; then
+            echo "::set-output name=branch::gh-page"
+          else
+            echo "::set-output name=branch::master"
+          fi
+
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ steps.target.outputs.branch }}
+
+      - run: |
+          git checkout -b gh-page || git checkout gh-page
+          scripts/generate-geojson.bash
+          git add .
+          git -c user.name='auto commit' -c user.email='noreply@localhost' commit -m "auto update @ $(date -u +'%Y-%m-%d %H:%M:%S')"
+          git push origin gh-page:gh-page
