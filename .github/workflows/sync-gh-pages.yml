@@ -13,9 +13,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: gh-pages
+          fetch-depth: 0
 
       - name: Merge master
         run: |
           git remote update --prune
-          git -c user.name='auto commit' -c user.email='noreply@localhost' merge origin/master --no-edit
+          git -c user.name='auto commit' -c user.email='noreply@localhost' merge origin/master --no-edit -s ours 
           git push
