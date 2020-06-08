@@ -15,13 +15,18 @@ jobs:
           ref: gh-pages
 
       - name: Merge master
+        env:
+          GIT_AUTHOR_NAME: 'auto commit'
+          GIT_COMMITTER_NAME: 'auto commit'
+          EMAIL: 'noreply@localhost'
         run: >
           git fetch --depth=1 origin master:master
 
-          git -c user.name='auto commit' -c user.email='noreply@localhost' 
-          merge origin/master 
+          git merge origin/master 
           --allow-unrelated-histories 
-          --strategy ours 
+          --strategy-option=theirs
           --no-edit 
+
+          git checkout HEAD^ -- raw/ docs/ && git commit --amend --no-edit
 
           git push
