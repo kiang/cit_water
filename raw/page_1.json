@@ -3,6 +3,67 @@
   "@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams?$skip=100&$filter=substringof%28%27Datastream_Category_type%3D%E6%B7%B9%E6%B0%B4%E6%84%9F%E6%B8%AC%E5%99%A8%27%2CDatastreams%2Fdescription%29&$expand=Thing,Thing%28%24expand%3DLocations%29,Observations%28%24top%3D1%3B%24orderby%3DphenomenonTime+desc%29",
   "value" : [ {
     "name" : "淹水深度",
+    "description" : " Datastream_id=058b80b0-fd18-477e-b653-7ffc0eda5017, Datastream_FullName=東南村_東勢西路_淹水深度, Datastream_Description=定點量測路面淹水深度, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
+    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+    "observedArea" : {
+      "type" : "Point",
+      "coordinates" : [ 120.247997, 23.678778 ]
+    },
+    "phenomenonTime" : "2020-09-01T06:01:03.000Z/2020-09-01T17:01:28.000Z",
+    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2765)/Sensor",
+    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2765)/Thing",
+    "Thing" : {
+      "name" : "e2fb310d-2cec-4c43-aa66-78c0ab187e15",
+      "description" : "壓力式路面淹水感測器，定點監測路面淹水狀況",
+      "properties" : {
+        "authority" : "雲林縣政府水利處",
+        "authority_type" : "水利署（與縣市政府合建）",
+        "stationCode" : "3764900FL109YL34",
+        "stationName" : "東南村_東勢西路",
+        "stationID" : "e2fb310d-2cec-4c43-aa66-78c0ab187e15"
+      },
+      "Locations" : [ {
+        "name" : "e2fb310d-2cec-4c43-aa66-78c0ab187e15",
+        "description" : "壓力式路面淹水感測器，定點監測路面淹水狀況",
+        "encodingType" : "address",
+        "location" : {
+  "type" : "Address",
+  "address" : "東南村_東勢西路219巷24號"
+},
+        "@iot.id" : 3069,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(3069)"
+      }, {
+        "name" : "e2fb310d-2cec-4c43-aa66-78c0ab187e15",
+        "description" : "壓力式路面淹水感測器，定點監測路面淹水狀況",
+        "encodingType" : "application/vnd.geo+json",
+        "location" : {"type":"Point","coordinates":[120.247997,23.678778]},
+        "@iot.id" : 3068,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(3068)"
+      } ],
+      "Locations@iot.count" : 2,
+      "@iot.id" : 1822,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1822)"
+    },
+    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2765)/Observations",
+    "Observations" : [ {
+      "phenomenonTime" : "2020-09-01T17:01:28.000Z",
+      "resultTime" : null,
+      "result" : 0,
+      "@iot.id" : 11774896,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774896)"
+    } ],
+    "Observations@iot.count" : 12,
+    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2765)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
+    "unitOfMeasurement" : {
+      "name" : "cm",
+      "symbol" : "cm",
+      "definition" : ""
+    },
+    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2765)/ObservedProperty",
+    "@iot.id" : 2765,
+    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2765)"
+  }, {
+    "name" : "淹水深度",
     "description" : " Datastream_id=f75823bd-7c87-4935-a905-81d3868c5da1, Datastream_FullName=松西村_尼爾魔幻藝術_淹水深度, Datastream_Description=定點量測路面淹水深度, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
     "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
     "observedArea" : {
@@ -124,56 +185,66 @@
     "@iot.id" : 827,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(827)"
   }, {
-    "name" : "淹水深度",
-    "description" : " Datastream_id=05eabe79-c52e-4168-9047-98d0d2fc5c87, Datastream_FullName=東港鎮_東隆宮_淹水深度, Datastream_Description=路面淹水深度量測, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
+    "name" : "水位",
+    "description" : " Datastream_id=e523437e-9471-4b64-aa7f-df57defc055c, Datastream_FullName=雲林斗南仁德橋_絕對高程, Datastream_Description=河川水位量測, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
     "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
     "observedArea" : {
       "type" : "Point",
-      "coordinates" : [ 120.44873, 22.46473 ]
+      "coordinates" : [ 120.49547, 23.66735 ]
     },
-    "phenomenonTime" : "2020-09-01T04:39:33.000Z/2020-09-01T16:49:33.000Z",
-    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)/Sensor",
-    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)/Thing",
+    "phenomenonTime" : "2020-09-01T04:37:01.000Z/2020-09-01T16:49:32.000Z",
+    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)/Sensor",
+    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)/Thing",
     "Thing" : {
-      "name" : "607d1aa6-fa62-48a0-a987-7ee0613e4b53",
-      "description" : "路面淹水監測站_東隆宮",
+      "name" : "c8f0ec8a-b5e6-448c-b2cb-b2575d789eb6",
+      "description" : "水位站",
       "properties" : {
-        "authority" : "第七河川局",
+        "authority" : "第五河川局",
         "authority_type" : "水利署",
-        "stationCode" : "",
-        "stationName" : "東港鎮_東隆宮",
-        "stationID" : "607d1aa6-fa62-48a0-a987-7ee0613e4b53"
+        "stationCode" : "3132015RV1070001",
+        "stationName" : "雲林斗南仁德橋",
+        "stationID" : "c8f0ec8a-b5e6-448c-b2cb-b2575d789eb6"
       },
       "Locations" : [ {
-        "name" : "607d1aa6-fa62-48a0-a987-7ee0613e4b53",
-        "description" : "路面淹水監測站_東隆宮",
+        "name" : "c8f0ec8a-b5e6-448c-b2cb-b2575d789eb6",
+        "description" : "水位站",
+        "encodingType" : "address",
+        "location" : {
+  "type" : "Address",
+  "address" : "斗南仁德橋下游橋樑上"
+},
+        "@iot.id" : 2751,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2751)"
+      }, {
+        "name" : "c8f0ec8a-b5e6-448c-b2cb-b2575d789eb6",
+        "description" : "水位站",
         "encodingType" : "application/vnd.geo+json",
-        "location" : {"type":"Point","coordinates":[120.44873,22.46473]},
-        "@iot.id" : 1326,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(1326)"
+        "location" : {"type":"Point","coordinates":[120.49547,23.66735]},
+        "@iot.id" : 2750,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2750)"
       } ],
-      "Locations@iot.count" : 1,
-      "@iot.id" : 794,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(794)"
+      "Locations@iot.count" : 2,
+      "@iot.id" : 1633,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1633)"
     },
-    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)/Observations",
+    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:49:33.000Z",
+      "phenomenonTime" : "2020-09-01T16:49:32.000Z",
       "resultTime" : null,
-      "result" : 0,
-      "@iot.id" : 11773841,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773841)"
+      "result" : 34.8310883636,
+      "@iot.id" : 11774680,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774680)"
     } ],
-    "Observations@iot.count" : 91,
-    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
+    "Observations@iot.count" : 126,
+    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
-      "name" : "cm",
-      "symbol" : "cm",
+      "name" : "m",
+      "symbol" : "m",
       "definition" : ""
     },
-    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)/ObservedProperty",
-    "@iot.id" : 1154,
-    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)"
+    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)/ObservedProperty",
+    "@iot.id" : 2499,
+    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)"
   }, {
     "name" : "NB-IoT訊號強度",
     "description" : " Datastream_id=12368ed5-4a42-41ca-885c-c09a3137752a, Datastream_FullName=NB-IoT訊號強度, Datastream_Description=NB-IoT訊號強度, Datastream_Category_type=淹水感測器, Datastream_Category=訊號強度",
@@ -182,7 +253,7 @@
       "type" : "Point",
       "coordinates" : [ 120.519286, 22.438062 ]
     },
-    "phenomenonTime" : "2020-09-01T04:40:32.000Z/2020-09-01T16:49:31.000Z",
+    "phenomenonTime" : "2020-09-01T04:40:32.000Z/2020-09-01T16:51:06.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(599)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(599)/Thing",
     "Thing" : {
@@ -209,13 +280,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(599)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:49:31.000Z",
+      "phenomenonTime" : "2020-09-01T16:51:06.000Z",
       "resultTime" : null,
       "result" : -59,
-      "@iot.id" : 11773905,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773905)"
+      "@iot.id" : 11775085,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775085)"
     } ],
-    "Observations@iot.count" : 89,
+    "Observations@iot.count" : 90,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(599)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "dBm",
@@ -225,6 +296,57 @@
     "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(599)/ObservedProperty",
     "@iot.id" : 599,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(599)"
+  }, {
+    "name" : "淹水深度",
+    "description" : " Datastream_id=05eabe79-c52e-4168-9047-98d0d2fc5c87, Datastream_FullName=東港鎮_東隆宮_淹水深度, Datastream_Description=路面淹水深度量測, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
+    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+    "observedArea" : {
+      "type" : "Point",
+      "coordinates" : [ 120.44873, 22.46473 ]
+    },
+    "phenomenonTime" : "2020-09-01T04:39:33.000Z/2020-09-01T16:59:37.000Z",
+    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)/Sensor",
+    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)/Thing",
+    "Thing" : {
+      "name" : "607d1aa6-fa62-48a0-a987-7ee0613e4b53",
+      "description" : "路面淹水監測站_東隆宮",
+      "properties" : {
+        "authority" : "第七河川局",
+        "authority_type" : "水利署",
+        "stationCode" : "",
+        "stationName" : "東港鎮_東隆宮",
+        "stationID" : "607d1aa6-fa62-48a0-a987-7ee0613e4b53"
+      },
+      "Locations" : [ {
+        "name" : "607d1aa6-fa62-48a0-a987-7ee0613e4b53",
+        "description" : "路面淹水監測站_東隆宮",
+        "encodingType" : "application/vnd.geo+json",
+        "location" : {"type":"Point","coordinates":[120.44873,22.46473]},
+        "@iot.id" : 1326,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(1326)"
+      } ],
+      "Locations@iot.count" : 1,
+      "@iot.id" : 794,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(794)"
+    },
+    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)/Observations",
+    "Observations" : [ {
+      "phenomenonTime" : "2020-09-01T16:59:37.000Z",
+      "resultTime" : null,
+      "result" : 0,
+      "@iot.id" : 11774905,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774905)"
+    } ],
+    "Observations@iot.count" : 92,
+    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
+    "unitOfMeasurement" : {
+      "name" : "cm",
+      "symbol" : "cm",
+      "definition" : ""
+    },
+    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)/ObservedProperty",
+    "@iot.id" : 1154,
+    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1154)"
   }, {
     "name" : "淹水深度",
     "description" : " Datastream_id=0dd073b9-de9e-46e0-a85c-80a3257a6b07, Datastream_FullName=佳冬鄉海埔村淹水深度(6374172536-3), Datastream_Description=連續式淹水量測, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
@@ -294,7 +416,7 @@
       "type" : "Point",
       "coordinates" : [ 120.528104, 22.430165 ]
     },
-    "phenomenonTime" : "2020-09-01T04:32:06.000Z/2020-09-01T16:49:35.000Z",
+    "phenomenonTime" : "2020-09-01T04:32:06.000Z/2020-09-01T17:00:31.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2456)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2456)/Thing",
     "Thing" : {
@@ -321,13 +443,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2456)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:49:35.000Z",
+      "phenomenonTime" : "2020-09-01T17:00:31.000Z",
       "resultTime" : null,
       "result" : -67,
-      "@iot.id" : 11773845,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773845)"
+      "@iot.id" : 11775188,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775188)"
     } ],
-    "Observations@iot.count" : 88,
+    "Observations@iot.count" : 89,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2456)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "dBm",
@@ -338,56 +460,66 @@
     "@iot.id" : 2456,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2456)"
   }, {
-    "name" : "水位",
-    "description" : " Datastream_id=58311483-ae9a-4c70-af8b-14dd8082fdbe, Datastream_FullName=水位, Datastream_Description=水位, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
+    "name" : "傳輸訊號強度",
+    "description" : " Datastream_id=142e6a7c-327b-4433-a6b2-cdb1e82b825c, Datastream_FullName=民雄交流道_NB訊號強度, Datastream_Description=訊號強度量測, Datastream_Category_type=淹水感測器, Datastream_Category=訊號強度",
     "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
     "observedArea" : {
       "type" : "Point",
-      "coordinates" : [ 120.503354, 22.448433 ]
+      "coordinates" : [ 120.418054, 23.553418 ]
     },
-    "phenomenonTime" : "2020-09-01T04:39:36.000Z/2020-09-01T16:41:31.000Z",
-    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)/Sensor",
-    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)/Thing",
+    "phenomenonTime" : "2020-09-01T04:32:17.000Z/2020-09-01T16:52:32.000Z",
+    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)/Sensor",
+    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)/Thing",
     "Thing" : {
-      "name" : "dba9e469-acf9-4f24-97b1-86519a08b073",
-      "description" : "",
+      "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
+      "description" : "淹水感測站",
       "properties" : {
-        "authority" : "屏東縣政府水利處",
-        "authority_type" : "水利署（與縣市政府合建）",
-        "stationCode" : "",
-        "stationName" : "瑤仔口橋",
-        "stationID" : "dba9e469-acf9-4f24-97b1-86519a08b073"
+        "authority" : "第五河川局",
+        "authority_type" : "水利署",
+        "stationCode" : "3132015FL1070010",
+        "stationName" : "107Q003民雄交流道",
+        "stationID" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7"
       },
       "Locations" : [ {
-        "name" : "dba9e469-acf9-4f24-97b1-86519a08b073",
-        "description" : "",
+        "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
+        "description" : "淹水感測站",
+        "encodingType" : "address",
+        "location" : {
+  "type" : "Address",
+  "address" : "台電-民雄21 西30北分12分4 K-2411,FE-21"
+},
+        "@iot.id" : 2243,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2243)"
+      }, {
+        "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
+        "description" : "淹水感測站",
         "encodingType" : "application/vnd.geo+json",
-        "location" : {"type":"Point","coordinates":[120.503354,22.448433]},
-        "@iot.id" : 2957,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2957)"
+        "location" : {"type":"Point","coordinates":[120.418054,23.553418]},
+        "@iot.id" : 2242,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2242)"
       } ],
-      "Locations@iot.count" : 1,
-      "@iot.id" : 1754,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1754)"
+      "Locations@iot.count" : 2,
+      "@iot.id" : 1333,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1333)"
     },
-    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)/Observations",
+    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:41:31.000Z",
+      "phenomenonTime" : "2020-09-01T16:52:32.000Z",
       "resultTime" : null,
-      "result" : -0.92200011,
-      "@iot.id" : 11773878,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773878)"
+      "result" : -61,
+      "@iot.id" : 11775099,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775099)"
     } ],
-    "Observations@iot.count" : 92,
-    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
+    "Observations@iot.count" : 89,
+    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
-      "name" : "m",
-      "symbol" : "m",
+      "name" : "dBm",
+      "symbol" : "dBm",
       "definition" : ""
     },
-    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)/ObservedProperty",
-    "@iot.id" : 2662,
-    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)"
+    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)/ObservedProperty",
+    "@iot.id" : 1983,
+    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)"
   }, {
     "name" : "淹水深度",
     "description" : " Datastream_id=42144d36-17af-4fc7-852f-1b2f87697cc6, Datastream_FullName=武廟路(關帝廟)_淹水感測器, Datastream_Description=路面淹水水深量測，作為積淹水警戒, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
@@ -450,66 +582,56 @@
     "@iot.id" : 1465,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1465)"
   }, {
-    "name" : "傳輸訊號強度",
-    "description" : " Datastream_id=142e6a7c-327b-4433-a6b2-cdb1e82b825c, Datastream_FullName=民雄交流道_NB訊號強度, Datastream_Description=訊號強度量測, Datastream_Category_type=淹水感測器, Datastream_Category=訊號強度",
+    "name" : "水位",
+    "description" : " Datastream_id=58311483-ae9a-4c70-af8b-14dd8082fdbe, Datastream_FullName=水位, Datastream_Description=水位, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
     "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
     "observedArea" : {
       "type" : "Point",
-      "coordinates" : [ 120.418054, 23.553418 ]
+      "coordinates" : [ 120.503354, 22.448433 ]
     },
-    "phenomenonTime" : "2020-09-01T04:32:17.000Z/2020-09-01T16:42:33.000Z",
-    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)/Sensor",
-    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)/Thing",
+    "phenomenonTime" : "2020-09-01T04:39:36.000Z/2020-09-01T17:01:33.000Z",
+    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)/Sensor",
+    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)/Thing",
     "Thing" : {
-      "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
-      "description" : "淹水感測站",
+      "name" : "dba9e469-acf9-4f24-97b1-86519a08b073",
+      "description" : "",
       "properties" : {
-        "authority" : "第五河川局",
-        "authority_type" : "水利署",
-        "stationCode" : "3132015FL1070010",
-        "stationName" : "107Q003民雄交流道",
-        "stationID" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7"
+        "authority" : "屏東縣政府水利處",
+        "authority_type" : "水利署（與縣市政府合建）",
+        "stationCode" : "",
+        "stationName" : "瑤仔口橋",
+        "stationID" : "dba9e469-acf9-4f24-97b1-86519a08b073"
       },
       "Locations" : [ {
-        "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
-        "description" : "淹水感測站",
-        "encodingType" : "address",
-        "location" : {
-  "type" : "Address",
-  "address" : "台電-民雄21 西30北分12分4 K-2411,FE-21"
-},
-        "@iot.id" : 2243,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2243)"
-      }, {
-        "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
-        "description" : "淹水感測站",
+        "name" : "dba9e469-acf9-4f24-97b1-86519a08b073",
+        "description" : "",
         "encodingType" : "application/vnd.geo+json",
-        "location" : {"type":"Point","coordinates":[120.418054,23.553418]},
-        "@iot.id" : 2242,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2242)"
+        "location" : {"type":"Point","coordinates":[120.503354,22.448433]},
+        "@iot.id" : 2957,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2957)"
       } ],
-      "Locations@iot.count" : 2,
-      "@iot.id" : 1333,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1333)"
+      "Locations@iot.count" : 1,
+      "@iot.id" : 1754,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1754)"
     },
-    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)/Observations",
+    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:42:33.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:33.000Z",
       "resultTime" : null,
-      "result" : -59,
-      "@iot.id" : 11773862,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773862)"
+      "result" : -1.06400007,
+      "@iot.id" : 11775141,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775141)"
     } ],
-    "Observations@iot.count" : 88,
-    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
+    "Observations@iot.count" : 93,
+    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
-      "name" : "dBm",
-      "symbol" : "dBm",
+      "name" : "m",
+      "symbol" : "m",
       "definition" : ""
     },
-    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)/ObservedProperty",
-    "@iot.id" : 1983,
-    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1983)"
+    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)/ObservedProperty",
+    "@iot.id" : 2662,
+    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2662)"
   }, {
     "name" : "直流電壓",
     "description" : " Datastream_id=5675edbb-d86f-4198-8b30-75238a1f3cdc, Datastream_FullName=新港平安壇 _電池電壓, Datastream_Description=電池電壓量測, Datastream_Category_type=淹水感測器, Datastream_Category=電池電壓",
@@ -518,7 +640,7 @@
       "type" : "Point",
       "coordinates" : [ 120.343544, 23.581772 ]
     },
-    "phenomenonTime" : "2020-09-01T04:40:36.000Z/2020-09-01T16:41:05.000Z",
+    "phenomenonTime" : "2020-09-01T04:40:36.000Z/2020-09-01T17:01:28.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(346)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(346)/Thing",
     "Thing" : {
@@ -555,13 +677,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(346)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:41:05.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:28.000Z",
       "resultTime" : null,
       "result" : 13.376001358032,
-      "@iot.id" : 11774137,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774137)"
+      "@iot.id" : 11775146,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775146)"
     } ],
-    "Observations@iot.count" : 87,
+    "Observations@iot.count" : 88,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(346)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "V",
@@ -579,7 +701,7 @@
       "type" : "Point",
       "coordinates" : [ 120.503354, 22.448433 ]
     },
-    "phenomenonTime" : "2020-09-01T04:39:36.000Z/2020-09-01T16:41:31.000Z",
+    "phenomenonTime" : "2020-09-01T04:39:36.000Z/2020-09-01T17:01:33.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2660)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2660)/Thing",
     "Thing" : {
@@ -606,13 +728,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2660)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:41:31.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:33.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11774071,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774071)"
+      "@iot.id" : 11774946,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774946)"
     } ],
-    "Observations@iot.count" : 92,
+    "Observations@iot.count" : 93,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2660)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -630,7 +752,7 @@
       "type" : "Point",
       "coordinates" : [ 120.4534515, 23.777392 ]
     },
-    "phenomenonTime" : "2020-09-01T05:01:01.000Z/2020-09-01T16:00:08.000Z",
+    "phenomenonTime" : "2020-09-01T05:01:01.000Z/2020-09-01T17:01:33.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(609)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(609)/Thing",
     "Thing" : {
@@ -667,13 +789,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(609)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:00:08.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:33.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11771151,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11771151)"
+      "@iot.id" : 11775394,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775394)"
     } ],
-    "Observations@iot.count" : 12,
+    "Observations@iot.count" : 13,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(609)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -683,6 +805,67 @@
     "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(609)/ObservedProperty",
     "@iot.id" : 609,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(609)"
+  }, {
+    "name" : "淹水深度",
+    "description" : " Datastream_id=878615ce-bd4c-4cc4-8245-1679a0f9b6e4, Datastream_FullName=公親里守望相助隊前(淹水站7)淹水深度, Datastream_Description=公親里守望相助隊前(淹水站7)淹水深度測量, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
+    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+    "observedArea" : {
+      "type" : "Point",
+      "coordinates" : [ 120.201478, 23.077134 ]
+    },
+    "phenomenonTime" : "2020-09-01T04:40:36.000Z/2020-09-01T16:40:36.000Z",
+    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)/Sensor",
+    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)/Thing",
+    "Thing" : {
+      "name" : "bd67dc00-e1a5-46a1-85dd-334452bcc15b",
+      "description" : " 淹水監測站",
+      "properties" : {
+        "authority" : "臺南市政府水利局",
+        "authority_type" : "水利署（與縣市政府合建）",
+        "stationCode" : "3952500FL0006",
+        "stationName" : "公親里守望相助隊前(淹水站7)",
+        "stationID" : "bd67dc00-e1a5-46a1-85dd-334452bcc15b"
+      },
+      "Locations" : [ {
+        "name" : "bd67dc00-e1a5-46a1-85dd-334452bcc15b",
+        "description" : " 淹水監測站",
+        "encodingType" : "address",
+        "location" : {
+  "type" : "Address",
+  "address" : "公親里守望相助隊前"
+},
+        "@iot.id" : 2622,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2622)"
+      }, {
+        "name" : "bd67dc00-e1a5-46a1-85dd-334452bcc15b",
+        "description" : " 淹水監測站",
+        "encodingType" : "application/vnd.geo+json",
+        "location" : {"type":"Point","coordinates":[120.201478,23.077134]},
+        "@iot.id" : 2621,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2621)"
+      } ],
+      "Locations@iot.count" : 2,
+      "@iot.id" : 1556,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1556)"
+    },
+    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)/Observations",
+    "Observations" : [ {
+      "phenomenonTime" : "2020-09-01T16:40:36.000Z",
+      "resultTime" : null,
+      "result" : 0,
+      "@iot.id" : 11775406,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775406)"
+    } ],
+    "Observations@iot.count" : 11,
+    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
+    "unitOfMeasurement" : {
+      "name" : "cm",
+      "symbol" : "cm",
+      "definition" : ""
+    },
+    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)/ObservedProperty",
+    "@iot.id" : 2378,
+    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)"
   }, {
     "name" : "淹水深度",
     "description" : " Datastream_id=d0a4c5fa-e5a3-468e-9fb1-948945417e76, Datastream_FullName=溪頂村_村落2_淹水深度, Datastream_Description=定點量測路面淹水深度, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
@@ -746,74 +929,13 @@
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(816)"
   }, {
     "name" : "淹水深度",
-    "description" : " Datastream_id=878615ce-bd4c-4cc4-8245-1679a0f9b6e4, Datastream_FullName=公親里守望相助隊前(淹水站7)淹水深度, Datastream_Description=公親里守望相助隊前(淹水站7)淹水深度測量, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
-    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
-    "observedArea" : {
-      "type" : "Point",
-      "coordinates" : [ 120.201478, 23.077134 ]
-    },
-    "phenomenonTime" : "2020-09-01T04:40:36.000Z/2020-09-01T14:40:36.000Z",
-    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)/Sensor",
-    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)/Thing",
-    "Thing" : {
-      "name" : "bd67dc00-e1a5-46a1-85dd-334452bcc15b",
-      "description" : " 淹水監測站",
-      "properties" : {
-        "authority" : "臺南市政府水利局",
-        "authority_type" : "水利署（與縣市政府合建）",
-        "stationCode" : "3952500FL0006",
-        "stationName" : "公親里守望相助隊前(淹水站7)",
-        "stationID" : "bd67dc00-e1a5-46a1-85dd-334452bcc15b"
-      },
-      "Locations" : [ {
-        "name" : "bd67dc00-e1a5-46a1-85dd-334452bcc15b",
-        "description" : " 淹水監測站",
-        "encodingType" : "address",
-        "location" : {
-  "type" : "Address",
-  "address" : "公親里守望相助隊前"
-},
-        "@iot.id" : 2622,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2622)"
-      }, {
-        "name" : "bd67dc00-e1a5-46a1-85dd-334452bcc15b",
-        "description" : " 淹水監測站",
-        "encodingType" : "application/vnd.geo+json",
-        "location" : {"type":"Point","coordinates":[120.201478,23.077134]},
-        "@iot.id" : 2621,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2621)"
-      } ],
-      "Locations@iot.count" : 2,
-      "@iot.id" : 1556,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1556)"
-    },
-    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)/Observations",
-    "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T14:40:36.000Z",
-      "resultTime" : null,
-      "result" : 0,
-      "@iot.id" : 11763702,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11763702)"
-    } ],
-    "Observations@iot.count" : 10,
-    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
-    "unitOfMeasurement" : {
-      "name" : "cm",
-      "symbol" : "cm",
-      "definition" : ""
-    },
-    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)/ObservedProperty",
-    "@iot.id" : 2378,
-    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2378)"
-  }, {
-    "name" : "淹水深度",
     "description" : " Datastream_id=838cb2c2-a3f5-4718-bfbc-8be38ef2f181, Datastream_FullName=羅厝村_福興路_淹水深度, Datastream_Description=定點量測路面淹水深度, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
     "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
     "observedArea" : {
       "type" : "Point",
       "coordinates" : [ 120.370861, 23.766316 ]
     },
-    "phenomenonTime" : "2020-09-01T05:01:00.000Z/2020-09-01T16:00:01.000Z",
+    "phenomenonTime" : "2020-09-01T05:01:00.000Z/2020-09-01T17:01:19.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(949)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(949)/Thing",
     "Thing" : {
@@ -850,13 +972,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(949)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:00:01.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:19.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11771218,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11771218)"
+      "@iot.id" : 11775421,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775421)"
     } ],
-    "Observations@iot.count" : 13,
+    "Observations@iot.count" : 14,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(949)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -1111,67 +1233,6 @@
     "@iot.id" : 1764,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1764)"
   }, {
-    "name" : "水位",
-    "description" : " Datastream_id=e523437e-9471-4b64-aa7f-df57defc055c, Datastream_FullName=雲林斗南仁德橋_絕對高程, Datastream_Description=河川水位量測, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
-    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
-    "observedArea" : {
-      "type" : "Point",
-      "coordinates" : [ 120.49547, 23.66735 ]
-    },
-    "phenomenonTime" : "2020-09-01T04:37:01.000Z/2020-09-01T16:37:32.000Z",
-    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)/Sensor",
-    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)/Thing",
-    "Thing" : {
-      "name" : "c8f0ec8a-b5e6-448c-b2cb-b2575d789eb6",
-      "description" : "水位站",
-      "properties" : {
-        "authority" : "第五河川局",
-        "authority_type" : "水利署",
-        "stationCode" : "3132015RV1070001",
-        "stationName" : "雲林斗南仁德橋",
-        "stationID" : "c8f0ec8a-b5e6-448c-b2cb-b2575d789eb6"
-      },
-      "Locations" : [ {
-        "name" : "c8f0ec8a-b5e6-448c-b2cb-b2575d789eb6",
-        "description" : "水位站",
-        "encodingType" : "address",
-        "location" : {
-  "type" : "Address",
-  "address" : "斗南仁德橋下游橋樑上"
-},
-        "@iot.id" : 2751,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2751)"
-      }, {
-        "name" : "c8f0ec8a-b5e6-448c-b2cb-b2575d789eb6",
-        "description" : "水位站",
-        "encodingType" : "application/vnd.geo+json",
-        "location" : {"type":"Point","coordinates":[120.49547,23.66735]},
-        "@iot.id" : 2750,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2750)"
-      } ],
-      "Locations@iot.count" : 2,
-      "@iot.id" : 1633,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1633)"
-    },
-    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)/Observations",
-    "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:37:32.000Z",
-      "resultTime" : null,
-      "result" : 34.8312347527,
-      "@iot.id" : 11773750,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773750)"
-    } ],
-    "Observations@iot.count" : 125,
-    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
-    "unitOfMeasurement" : {
-      "name" : "m",
-      "symbol" : "m",
-      "definition" : ""
-    },
-    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)/ObservedProperty",
-    "@iot.id" : 2499,
-    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2499)"
-  }, {
     "name" : "淹水深度",
     "description" : " Datastream_id=8e9a1ddd-69bb-4d70-a50f-764e3c3b0b16, Datastream_FullName=下寮村_川琦紙業_淹水深度, Datastream_Description=定點量測路面淹水深度, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
     "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
@@ -1179,7 +1240,7 @@
       "type" : "Point",
       "coordinates" : [ 120.3384548, 23.6116826 ]
     },
-    "phenomenonTime" : "2020-09-01T05:01:06.000Z/2020-09-01T16:00:09.000Z",
+    "phenomenonTime" : "2020-09-01T05:01:06.000Z/2020-09-01T17:01:33.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1798)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1798)/Thing",
     "Thing" : {
@@ -1216,13 +1277,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1798)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:00:09.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:33.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11771276,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11771276)"
+      "@iot.id" : 11775534,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775534)"
     } ],
-    "Observations@iot.count" : 12,
+    "Observations@iot.count" : 13,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1798)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -1240,7 +1301,7 @@
       "type" : "Point",
       "coordinates" : [ 120.173174, 23.418444 ]
     },
-    "phenomenonTime" : "2020-09-01T04:40:41.000Z/2020-09-01T16:41:33.000Z",
+    "phenomenonTime" : "2020-09-01T04:40:41.000Z/2020-09-01T17:01:35.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(944)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(944)/Thing",
     "Thing" : {
@@ -1277,13 +1338,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(944)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:41:33.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:35.000Z",
       "resultTime" : null,
-      "result" : -79,
-      "@iot.id" : 11774129,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774129)"
+      "result" : -81,
+      "@iot.id" : 11775197,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775197)"
     } ],
-    "Observations@iot.count" : 82,
+    "Observations@iot.count" : 83,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(944)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "dBm",
@@ -1301,7 +1362,7 @@
       "type" : "Point",
       "coordinates" : [ 120.358111, 23.640463 ]
     },
-    "phenomenonTime" : "2020-09-01T04:41:47.000Z/2020-09-01T16:41:33.000Z",
+    "phenomenonTime" : "2020-09-01T04:41:47.000Z/2020-09-01T17:01:02.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1635)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1635)/Thing",
     "Thing" : {
@@ -1338,13 +1399,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1635)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:41:33.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:02.000Z",
       "resultTime" : null,
-      "result" : -63,
-      "@iot.id" : 11774144,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774144)"
+      "result" : -59,
+      "@iot.id" : 11775106,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775106)"
     } ],
-    "Observations@iot.count" : 79,
+    "Observations@iot.count" : 80,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1635)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "dBm",
@@ -1362,7 +1423,7 @@
       "type" : "Point",
       "coordinates" : [ 120.304145, 23.761083 ]
     },
-    "phenomenonTime" : "2020-09-01T05:00:43.000Z/2020-09-01T16:00:09.000Z",
+    "phenomenonTime" : "2020-09-01T05:00:43.000Z/2020-09-01T17:01:17.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2984)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2984)/Thing",
     "Thing" : {
@@ -1399,13 +1460,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2984)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:00:09.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:17.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11771455,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11771455)"
+      "@iot.id" : 11775589,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775589)"
     } ],
-    "Observations@iot.count" : 12,
+    "Observations@iot.count" : 13,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2984)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -1465,57 +1526,6 @@
     "@iot.id" : 476,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(476)"
   }, {
-    "name" : "NB-IoT訊號強度",
-    "description" : " Datastream_id=531d92b8-1c40-40df-88af-1851e3ba0dd5, Datastream_FullName=NB-IoT訊號強度, Datastream_Description=NB-IoT訊號強度, Datastream_Category_type=淹水感測器, Datastream_Category=訊號強度",
-    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
-    "observedArea" : {
-      "type" : "Point",
-      "coordinates" : [ 120.530495, 22.426639 ]
-    },
-    "phenomenonTime" : "2020-09-01T04:40:32.000Z/2020-09-01T16:49:35.000Z",
-    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)/Sensor",
-    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)/Thing",
-    "Thing" : {
-      "name" : "bf266213-9858-4f18-9b05-44d9d3680beb",
-      "description" : "",
-      "properties" : {
-        "authority" : "屏東縣政府水利處",
-        "authority_type" : "水利署（與縣市政府合建）",
-        "stationCode" : "",
-        "stationName" : "台17線266K處",
-        "stationID" : "bf266213-9858-4f18-9b05-44d9d3680beb"
-      },
-      "Locations" : [ {
-        "name" : "bf266213-9858-4f18-9b05-44d9d3680beb",
-        "description" : "",
-        "encodingType" : "application/vnd.geo+json",
-        "location" : {"type":"Point","coordinates":[120.530495,22.426639]},
-        "@iot.id" : 2644,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2644)"
-      } ],
-      "Locations@iot.count" : 1,
-      "@iot.id" : 1569,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1569)"
-    },
-    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)/Observations",
-    "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:49:35.000Z",
-      "resultTime" : null,
-      "result" : -63,
-      "@iot.id" : 11774052,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774052)"
-    } ],
-    "Observations@iot.count" : 91,
-    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
-    "unitOfMeasurement" : {
-      "name" : "dBm",
-      "symbol" : "dBm",
-      "definition" : ""
-    },
-    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)/ObservedProperty",
-    "@iot.id" : 2397,
-    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)"
-  }, {
     "name" : "傳輸訊號強度",
     "description" : " Datastream_id=2bfbb638-040f-4e11-9821-324a50cf3077, Datastream_FullName=朴子竹安橋北側_NB訊號強度, Datastream_Description=訊號強度量測, Datastream_Category_type=淹水感測器, Datastream_Category=訊號強度",
     "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
@@ -1523,7 +1533,7 @@
       "type" : "Point",
       "coordinates" : [ 120.240089, 23.43392 ]
     },
-    "phenomenonTime" : "2020-09-01T04:40:26.000Z/2020-09-01T16:41:32.000Z",
+    "phenomenonTime" : "2020-09-01T04:40:26.000Z/2020-09-01T16:51:31.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2206)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2206)/Thing",
     "Thing" : {
@@ -1560,13 +1570,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2206)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:41:32.000Z",
+      "phenomenonTime" : "2020-09-01T16:51:31.000Z",
       "resultTime" : null,
-      "result" : -57,
-      "@iot.id" : 11773887,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773887)"
+      "result" : -55,
+      "@iot.id" : 11774840,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774840)"
     } ],
-    "Observations@iot.count" : 88,
+    "Observations@iot.count" : 89,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2206)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "dBm",
@@ -1576,6 +1586,57 @@
     "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2206)/ObservedProperty",
     "@iot.id" : 2206,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2206)"
+  }, {
+    "name" : "NB-IoT訊號強度",
+    "description" : " Datastream_id=531d92b8-1c40-40df-88af-1851e3ba0dd5, Datastream_FullName=NB-IoT訊號強度, Datastream_Description=NB-IoT訊號強度, Datastream_Category_type=淹水感測器, Datastream_Category=訊號強度",
+    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+    "observedArea" : {
+      "type" : "Point",
+      "coordinates" : [ 120.530495, 22.426639 ]
+    },
+    "phenomenonTime" : "2020-09-01T04:40:32.000Z/2020-09-01T17:01:43.000Z",
+    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)/Sensor",
+    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)/Thing",
+    "Thing" : {
+      "name" : "bf266213-9858-4f18-9b05-44d9d3680beb",
+      "description" : "",
+      "properties" : {
+        "authority" : "屏東縣政府水利處",
+        "authority_type" : "水利署（與縣市政府合建）",
+        "stationCode" : "",
+        "stationName" : "台17線266K處",
+        "stationID" : "bf266213-9858-4f18-9b05-44d9d3680beb"
+      },
+      "Locations" : [ {
+        "name" : "bf266213-9858-4f18-9b05-44d9d3680beb",
+        "description" : "",
+        "encodingType" : "application/vnd.geo+json",
+        "location" : {"type":"Point","coordinates":[120.530495,22.426639]},
+        "@iot.id" : 2644,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2644)"
+      } ],
+      "Locations@iot.count" : 1,
+      "@iot.id" : 1569,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1569)"
+    },
+    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)/Observations",
+    "Observations" : [ {
+      "phenomenonTime" : "2020-09-01T17:01:43.000Z",
+      "resultTime" : null,
+      "result" : -63,
+      "@iot.id" : 11775118,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775118)"
+    } ],
+    "Observations@iot.count" : 92,
+    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
+    "unitOfMeasurement" : {
+      "name" : "dBm",
+      "symbol" : "dBm",
+      "definition" : ""
+    },
+    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)/ObservedProperty",
+    "@iot.id" : 2397,
+    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2397)"
   }, {
     "name" : "淹水深度",
     "description" : " Datastream_id=a62f0423-f22b-4630-88bd-6bbb9f2ab10f, Datastream_FullName=福田里_佳昇豆皮行_淹水深度, Datastream_Description=定點量測路面淹水深度, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
@@ -1621,13 +1682,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2675)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:00:02.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:31.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11771388,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11771388)"
+      "@iot.id" : 11775618,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775618)"
     } ],
-    "Observations@iot.count" : 12,
+    "Observations@iot.count" : 13,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2675)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -2032,7 +2093,7 @@
       "type" : "Point",
       "coordinates" : [ 120.343544, 23.581772 ]
     },
-    "phenomenonTime" : "2020-09-01T04:40:36.000Z/2020-09-01T16:41:05.000Z",
+    "phenomenonTime" : "2020-09-01T04:40:36.000Z/2020-09-01T17:01:28.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(345)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(345)/Thing",
     "Thing" : {
@@ -2069,13 +2130,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(345)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:41:05.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:28.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11774493,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774493)"
+      "@iot.id" : 11775558,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775558)"
     } ],
-    "Observations@iot.count" : 87,
+    "Observations@iot.count" : 88,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(345)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -2409,7 +2470,7 @@
       "type" : "Point",
       "coordinates" : [ 120.140685, 23.45422 ]
     },
-    "phenomenonTime" : "2020-09-01T04:40:36.000Z/2020-09-01T16:32:02.000Z",
+    "phenomenonTime" : "2020-09-01T04:40:36.000Z/2020-09-01T16:42:02.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1120)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1120)/Thing",
     "Thing" : {
@@ -2446,13 +2507,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1120)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:32:02.000Z",
+      "phenomenonTime" : "2020-09-01T16:42:02.000Z",
       "resultTime" : null,
       "result" : 13.112001419067,
-      "@iot.id" : 11773396,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773396)"
+      "@iot.id" : 11774657,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774657)"
     } ],
-    "Observations@iot.count" : 87,
+    "Observations@iot.count" : 88,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1120)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "V",
@@ -2582,7 +2643,7 @@
       "type" : "Point",
       "coordinates" : [ 121.774, 24.7325 ]
     },
-    "phenomenonTime" : "2020-09-01T04:33:13.000Z/2020-09-01T16:47:40.000Z",
+    "phenomenonTime" : "2020-09-01T04:33:13.000Z/2020-09-01T16:56:37.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1069)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1069)/Thing",
     "Thing" : {
@@ -2619,13 +2680,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1069)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:47:40.000Z",
+      "phenomenonTime" : "2020-09-01T16:56:37.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11774168,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774168)"
+      "@iot.id" : 11775195,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775195)"
     } ],
-    "Observations@iot.count" : 107,
+    "Observations@iot.count" : 108,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1069)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -2748,67 +2809,6 @@
     "@iot.id" : 193,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(193)"
   }, {
-    "name" : "直流電壓",
-    "description" : " Datastream_id=f8a0c40f-e727-48f2-bf89-10fa8ac764a8, Datastream_FullName=民雄交流道_電池電壓, Datastream_Description=電池電壓量測, Datastream_Category_type=淹水感測器, Datastream_Category=電池電壓",
-    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
-    "observedArea" : {
-      "type" : "Point",
-      "coordinates" : [ 120.418054, 23.553418 ]
-    },
-    "phenomenonTime" : "2020-09-01T04:32:17.000Z/2020-09-01T16:33:02.000Z",
-    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)/Sensor",
-    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)/Thing",
-    "Thing" : {
-      "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
-      "description" : "淹水感測站",
-      "properties" : {
-        "authority" : "第五河川局",
-        "authority_type" : "水利署",
-        "stationCode" : "3132015FL1070010",
-        "stationName" : "107Q003民雄交流道",
-        "stationID" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7"
-      },
-      "Locations" : [ {
-        "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
-        "description" : "淹水感測站",
-        "encodingType" : "address",
-        "location" : {
-  "type" : "Address",
-  "address" : "台電-民雄21 西30北分12分4 K-2411,FE-21"
-},
-        "@iot.id" : 2243,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2243)"
-      }, {
-        "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
-        "description" : "淹水感測站",
-        "encodingType" : "application/vnd.geo+json",
-        "location" : {"type":"Point","coordinates":[120.418054,23.553418]},
-        "@iot.id" : 2242,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2242)"
-      } ],
-      "Locations@iot.count" : 2,
-      "@iot.id" : 1333,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1333)"
-    },
-    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)/Observations",
-    "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:33:02.000Z",
-      "resultTime" : null,
-      "result" : 13.314399719238,
-      "@iot.id" : 11773418,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773418)"
-    } ],
-    "Observations@iot.count" : 87,
-    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
-    "unitOfMeasurement" : {
-      "name" : "V",
-      "symbol" : "V",
-      "definition" : ""
-    },
-    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)/ObservedProperty",
-    "@iot.id" : 1986,
-    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)"
-  }, {
     "name" : "水深",
     "description" : " Datastream_id=1dbd0341-709f-4c4e-b57d-9bd0ff8f1f61, Datastream_FullName=都市淹水站_FR-0044:冬山 建進三路_水位, Datastream_Description=水深, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
     "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
@@ -2816,7 +2816,7 @@
       "type" : "Point",
       "coordinates" : [ 121.804, 24.649 ]
     },
-    "phenomenonTime" : "2020-09-01T04:33:13.000Z/2020-09-01T16:47:40.000Z",
+    "phenomenonTime" : "2020-09-01T04:33:13.000Z/2020-09-01T16:56:37.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1882)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1882)/Thing",
     "Thing" : {
@@ -2853,13 +2853,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1882)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:47:40.000Z",
+      "phenomenonTime" : "2020-09-01T16:56:37.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11773857,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773857)"
+      "@iot.id" : 11775148,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775148)"
     } ],
-    "Observations@iot.count" : 107,
+    "Observations@iot.count" : 108,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1882)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -2877,7 +2877,7 @@
       "type" : "Point",
       "coordinates" : [ 120.404787, 23.67956 ]
     },
-    "phenomenonTime" : "2020-09-01T04:40:31.000Z/2020-09-01T16:49:42.000Z",
+    "phenomenonTime" : "2020-09-01T04:40:31.000Z/2020-09-01T17:00:52.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1830)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1830)/Thing",
     "Thing" : {
@@ -2914,13 +2914,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1830)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:49:42.000Z",
+      "phenomenonTime" : "2020-09-01T17:00:52.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11773897,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773897)"
+      "@iot.id" : 11774797,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774797)"
     } ],
-    "Observations@iot.count" : 93,
+    "Observations@iot.count" : 94,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1830)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -2930,6 +2930,67 @@
     "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1830)/ObservedProperty",
     "@iot.id" : 1830,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1830)"
+  }, {
+    "name" : "直流電壓",
+    "description" : " Datastream_id=f8a0c40f-e727-48f2-bf89-10fa8ac764a8, Datastream_FullName=民雄交流道_電池電壓, Datastream_Description=電池電壓量測, Datastream_Category_type=淹水感測器, Datastream_Category=電池電壓",
+    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+    "observedArea" : {
+      "type" : "Point",
+      "coordinates" : [ 120.418054, 23.553418 ]
+    },
+    "phenomenonTime" : "2020-09-01T04:32:17.000Z/2020-09-01T16:42:33.000Z",
+    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)/Sensor",
+    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)/Thing",
+    "Thing" : {
+      "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
+      "description" : "淹水感測站",
+      "properties" : {
+        "authority" : "第五河川局",
+        "authority_type" : "水利署",
+        "stationCode" : "3132015FL1070010",
+        "stationName" : "107Q003民雄交流道",
+        "stationID" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7"
+      },
+      "Locations" : [ {
+        "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
+        "description" : "淹水感測站",
+        "encodingType" : "address",
+        "location" : {
+  "type" : "Address",
+  "address" : "台電-民雄21 西30北分12分4 K-2411,FE-21"
+},
+        "@iot.id" : 2243,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2243)"
+      }, {
+        "name" : "a3550f5f-34eb-4364-bd5d-c51a115ea6b7",
+        "description" : "淹水感測站",
+        "encodingType" : "application/vnd.geo+json",
+        "location" : {"type":"Point","coordinates":[120.418054,23.553418]},
+        "@iot.id" : 2242,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2242)"
+      } ],
+      "Locations@iot.count" : 2,
+      "@iot.id" : 1333,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1333)"
+    },
+    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)/Observations",
+    "Observations" : [ {
+      "phenomenonTime" : "2020-09-01T16:42:33.000Z",
+      "resultTime" : null,
+      "result" : 13.332000732422,
+      "@iot.id" : 11774713,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774713)"
+    } ],
+    "Observations@iot.count" : 88,
+    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
+    "unitOfMeasurement" : {
+      "name" : "V",
+      "symbol" : "V",
+      "definition" : ""
+    },
+    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)/ObservedProperty",
+    "@iot.id" : 1986,
+    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1986)"
   }, {
     "name" : "淹水深度",
     "description" : " Datastream_id=4fff5591-1a06-4e21-83a5-0720d3bde98b, Datastream_FullName=新南路二段-F05-005-水位, Datastream_Description=新南路二段, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
@@ -3101,7 +3162,7 @@
       "type" : "Point",
       "coordinates" : [ 120.349644, 23.712486 ]
     },
-    "phenomenonTime" : "2020-09-01T04:41:47.000Z/2020-09-01T16:41:33.000Z",
+    "phenomenonTime" : "2020-09-01T04:41:47.000Z/2020-09-01T16:51:34.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1728)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1728)/Thing",
     "Thing" : {
@@ -3138,13 +3199,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1728)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:41:33.000Z",
+      "phenomenonTime" : "2020-09-01T16:51:34.000Z",
       "resultTime" : null,
-      "result" : -59,
-      "@iot.id" : 11773788,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773788)"
+      "result" : -57,
+      "@iot.id" : 11775052,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775052)"
     } ],
-    "Observations@iot.count" : 78,
+    "Observations@iot.count" : 79,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1728)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "dBm",
@@ -3199,13 +3260,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(245)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:47:40.000Z",
+      "phenomenonTime" : "2020-09-01T16:56:37.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11774532,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774532)"
+      "@iot.id" : 11775626,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775626)"
     } ],
-    "Observations@iot.count" : 106,
+    "Observations@iot.count" : 107,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(245)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -3223,7 +3284,7 @@
       "type" : "Point",
       "coordinates" : [ 120.233733, 23.432375 ]
     },
-    "phenomenonTime" : "2020-09-01T04:40:34.000Z/2020-09-01T16:41:32.000Z",
+    "phenomenonTime" : "2020-09-01T04:40:34.000Z/2020-09-01T16:51:31.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1734)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1734)/Thing",
     "Thing" : {
@@ -3260,13 +3321,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1734)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:41:32.000Z",
+      "phenomenonTime" : "2020-09-01T16:51:31.000Z",
       "resultTime" : null,
       "result" : -57,
-      "@iot.id" : 11773844,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773844)"
+      "@iot.id" : 11774831,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774831)"
     } ],
-    "Observations@iot.count" : 81,
+    "Observations@iot.count" : 82,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1734)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "dBm",
@@ -3555,7 +3616,7 @@
       "type" : "Point",
       "coordinates" : [ 121.772, 24.7483 ]
     },
-    "phenomenonTime" : "2020-09-01T04:33:13.000Z/2020-09-01T16:47:40.000Z",
+    "phenomenonTime" : "2020-09-01T04:33:13.000Z/2020-09-01T16:56:37.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2328)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2328)/Thing",
     "Thing" : {
@@ -3592,13 +3653,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2328)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:47:40.000Z",
+      "phenomenonTime" : "2020-09-01T16:56:37.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11773954,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11773954)"
+      "@iot.id" : 11774911,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774911)"
     } ],
-    "Observations@iot.count" : 107,
+    "Observations@iot.count" : 108,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2328)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -3830,7 +3891,7 @@
       "type" : "Point",
       "coordinates" : [ 121.82049, 24.70712 ]
     },
-    "phenomenonTime" : "2020-09-01T04:40:42.000Z/2020-09-01T16:49:40.000Z",
+    "phenomenonTime" : "2020-09-01T04:40:42.000Z/2020-09-01T17:01:41.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(3018)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(3018)/Thing",
     "Thing" : {
@@ -3857,13 +3918,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(3018)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:49:40.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:41.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11774152,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774152)"
+      "@iot.id" : 11775183,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775183)"
     } ],
-    "Observations@iot.count" : 93,
+    "Observations@iot.count" : 94,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(3018)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -4156,7 +4217,7 @@
       "type" : "Point",
       "coordinates" : [ 120.537786, 22.403205 ]
     },
-    "phenomenonTime" : "2020-09-01T04:39:39.000Z/2020-09-01T16:41:12.000Z",
+    "phenomenonTime" : "2020-09-01T04:39:39.000Z/2020-09-01T16:50:51.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1937)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1937)/Thing",
     "Thing" : {
@@ -4183,13 +4244,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1937)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:41:12.000Z",
+      "phenomenonTime" : "2020-09-01T16:50:51.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11774018,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774018)"
+      "@iot.id" : 11774944,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774944)"
     } ],
-    "Observations@iot.count" : 82,
+    "Observations@iot.count" : 83,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1937)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -4207,7 +4268,7 @@
       "type" : "Point",
       "coordinates" : [ 120.545663, 23.522717 ]
     },
-    "phenomenonTime" : "2020-09-01T04:33:06.000Z/2020-09-01T16:40:44.000Z",
+    "phenomenonTime" : "2020-09-01T04:33:06.000Z/2020-09-01T17:01:16.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1563)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1563)/Thing",
     "Thing" : {
@@ -4244,13 +4305,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1563)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:40:44.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:16.000Z",
       "resultTime" : null,
-      "result" : -73,
-      "@iot.id" : 11774135,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774135)"
+      "result" : -71,
+      "@iot.id" : 11775069,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775069)"
     } ],
-    "Observations@iot.count" : 109,
+    "Observations@iot.count" : 110,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1563)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "dBm",
@@ -4415,6 +4476,67 @@
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(930)"
   }, {
     "name" : "淹水深度",
+    "description" : " Datastream_id=6c3d55ed-0287-45d2-9ef3-b0d404e769af, Datastream_FullName=伸港六股排水淹水, Datastream_Description=地面水淹水感測, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
+    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+    "observedArea" : {
+      "type" : "Point",
+      "coordinates" : [ 120.490708, 24.164756 ]
+    },
+    "phenomenonTime" : "2020-09-01T04:40:00.000Z/2020-09-01T17:00:00.000Z",
+    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)/Sensor",
+    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)/Thing",
+    "Thing" : {
+      "name" : "78fbd40d-33ef-4579-871f-29e297c06dfd",
+      "description" : "淹水感測",
+      "properties" : {
+        "authority" : "第四河川局",
+        "authority_type" : "水利署",
+        "stationCode" : "3132014FLRD00004",
+        "stationName" : "伸港六股排水淹水感測",
+        "stationID" : "78fbd40d-33ef-4579-871f-29e297c06dfd"
+      },
+      "Locations" : [ {
+        "name" : "78fbd40d-33ef-4579-871f-29e297c06dfd",
+        "description" : "淹水感測",
+        "encodingType" : "address",
+        "location" : {
+  "type" : "Address",
+  "address" : "彰化縣伸港鄉大同村六股排水"
+},
+        "@iot.id" : 1686,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(1686)"
+      }, {
+        "name" : "78fbd40d-33ef-4579-871f-29e297c06dfd",
+        "description" : "淹水感測",
+        "encodingType" : "application/vnd.geo+json",
+        "location" : {"type":"Point","coordinates":[120.490708,24.164756]},
+        "@iot.id" : 1685,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(1685)"
+      } ],
+      "Locations@iot.count" : 2,
+      "@iot.id" : 1004,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1004)"
+    },
+    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)/Observations",
+    "Observations" : [ {
+      "phenomenonTime" : "2020-09-01T17:00:00.000Z",
+      "resultTime" : null,
+      "result" : 0.2,
+      "@iot.id" : 11775272,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775272)"
+    } ],
+    "Observations@iot.count" : 67,
+    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
+    "unitOfMeasurement" : {
+      "name" : "cm",
+      "symbol" : "cm",
+      "definition" : ""
+    },
+    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)/ObservedProperty",
+    "@iot.id" : 1498,
+    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)"
+  }, {
+    "name" : "淹水深度",
     "description" : " Datastream_id=fafabd43-cb44-4427-bfb5-0d8a34ee378e, Datastream_FullName=大同里_哈寶堡早餐_淹水深度, Datastream_Description=定點量測路面淹水深度, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
     "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
     "observedArea" : {
@@ -4482,7 +4604,7 @@
       "type" : "Point",
       "coordinates" : [ 120.404787, 23.67956 ]
     },
-    "phenomenonTime" : "2020-09-01T04:40:31.000Z/2020-09-01T16:32:03.000Z",
+    "phenomenonTime" : "2020-09-01T04:40:31.000Z/2020-09-01T17:00:52.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1829)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1829)/Thing",
     "Thing" : {
@@ -4519,13 +4641,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1829)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:32:03.000Z",
+      "phenomenonTime" : "2020-09-01T17:00:52.000Z",
       "resultTime" : null,
       "result" : -81,
-      "@iot.id" : 11772954,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11772954)"
+      "@iot.id" : 11775004,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775004)"
     } ],
-    "Observations@iot.count" : 80,
+    "Observations@iot.count" : 81,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1829)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "dBm",
@@ -4535,67 +4657,6 @@
     "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1829)/ObservedProperty",
     "@iot.id" : 1829,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1829)"
-  }, {
-    "name" : "淹水深度",
-    "description" : " Datastream_id=6c3d55ed-0287-45d2-9ef3-b0d404e769af, Datastream_FullName=伸港六股排水淹水, Datastream_Description=地面水淹水感測, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
-    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
-    "observedArea" : {
-      "type" : "Point",
-      "coordinates" : [ 120.490708, 24.164756 ]
-    },
-    "phenomenonTime" : "2020-09-01T04:40:00.000Z/2020-09-01T16:40:00.000Z",
-    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)/Sensor",
-    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)/Thing",
-    "Thing" : {
-      "name" : "78fbd40d-33ef-4579-871f-29e297c06dfd",
-      "description" : "淹水感測",
-      "properties" : {
-        "authority" : "第四河川局",
-        "authority_type" : "水利署",
-        "stationCode" : "3132014FLRD00004",
-        "stationName" : "伸港六股排水淹水感測",
-        "stationID" : "78fbd40d-33ef-4579-871f-29e297c06dfd"
-      },
-      "Locations" : [ {
-        "name" : "78fbd40d-33ef-4579-871f-29e297c06dfd",
-        "description" : "淹水感測",
-        "encodingType" : "address",
-        "location" : {
-  "type" : "Address",
-  "address" : "彰化縣伸港鄉大同村六股排水"
-},
-        "@iot.id" : 1686,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(1686)"
-      }, {
-        "name" : "78fbd40d-33ef-4579-871f-29e297c06dfd",
-        "description" : "淹水感測",
-        "encodingType" : "application/vnd.geo+json",
-        "location" : {"type":"Point","coordinates":[120.490708,24.164756]},
-        "@iot.id" : 1685,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(1685)"
-      } ],
-      "Locations@iot.count" : 2,
-      "@iot.id" : 1004,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1004)"
-    },
-    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)/Observations",
-    "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:40:00.000Z",
-      "resultTime" : null,
-      "result" : 0.2,
-      "@iot.id" : 11774174,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774174)"
-    } ],
-    "Observations@iot.count" : 66,
-    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
-    "unitOfMeasurement" : {
-      "name" : "cm",
-      "symbol" : "cm",
-      "definition" : ""
-    },
-    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)/ObservedProperty",
-    "@iot.id" : 1498,
-    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1498)"
   }, {
     "name" : "傳輸訊號強度",
     "description" : " Datastream_id=96f6d493-16e8-4229-b810-4afb75ca1c5c, Datastream_FullName=淹水感測器1_rssi, Datastream_Description=訊號強度監測, Datastream_Category_type=淹水感測器, Datastream_Category=訊號強度",
@@ -4664,7 +4725,7 @@
       "type" : "Point",
       "coordinates" : [ 121.734708, 25.132267 ]
     },
-    "phenomenonTime" : "2020-09-01T04:40:46.000Z/2020-09-01T14:40:46.000Z",
+    "phenomenonTime" : "2020-09-01T04:40:46.000Z/2020-09-01T16:40:46.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1284)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1284)/Thing",
     "Thing" : {
@@ -4701,13 +4762,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1284)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T14:40:46.000Z",
+      "phenomenonTime" : "2020-09-01T16:40:46.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11768227,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11768227)"
+      "@iot.id" : 11775414,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775414)"
     } ],
-    "Observations@iot.count" : 7,
+    "Observations@iot.count" : 8,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1284)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -4770,6 +4831,67 @@
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1088)"
   }, {
     "name" : "淹水深度",
+    "description" : " Datastream_id=91a326bf-3311-41db-817c-409c4a043d02, Datastream_FullName=海佃路四段338巷2弄99號前(淹水站43)淹水深度, Datastream_Description=海佃路四段338巷2弄99號前(淹水站43)淹水深度測量, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
+    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+    "observedArea" : {
+      "type" : "Point",
+      "coordinates" : [ 120.179365, 23.062378 ]
+    },
+    "phenomenonTime" : "2020-09-01T04:45:47.000Z/2020-09-01T16:45:47.000Z",
+    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)/Sensor",
+    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)/Thing",
+    "Thing" : {
+      "name" : "e6b94ce4-914a-4ec8-917e-78cc21a626df",
+      "description" : " 淹水監測站",
+      "properties" : {
+        "authority" : "臺南市政府水利局",
+        "authority_type" : "水利署（與縣市政府合建）",
+        "stationCode" : "3952500FL0037",
+        "stationName" : "海佃路四段338巷2弄99號前(淹水站43)",
+        "stationID" : "e6b94ce4-914a-4ec8-917e-78cc21a626df"
+      },
+      "Locations" : [ {
+        "name" : "e6b94ce4-914a-4ec8-917e-78cc21a626df",
+        "description" : " 淹水監測站",
+        "encodingType" : "address",
+        "location" : {
+  "type" : "Address",
+  "address" : "海佃路四段338巷2弄99號前"
+},
+        "@iot.id" : 3115,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(3115)"
+      }, {
+        "name" : "e6b94ce4-914a-4ec8-917e-78cc21a626df",
+        "description" : " 淹水監測站",
+        "encodingType" : "application/vnd.geo+json",
+        "location" : {"type":"Point","coordinates":[120.179365,23.062378]},
+        "@iot.id" : 3114,
+        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(3114)"
+      } ],
+      "Locations@iot.count" : 2,
+      "@iot.id" : 1847,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1847)"
+    },
+    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)/Observations",
+    "Observations" : [ {
+      "phenomenonTime" : "2020-09-01T16:45:47.000Z",
+      "resultTime" : null,
+      "result" : 0,
+      "@iot.id" : 11775485,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775485)"
+    } ],
+    "Observations@iot.count" : 13,
+    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
+    "unitOfMeasurement" : {
+      "name" : "cm",
+      "symbol" : "cm",
+      "definition" : ""
+    },
+    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)/ObservedProperty",
+    "@iot.id" : 2818,
+    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)"
+  }, {
+    "name" : "淹水深度",
     "description" : " Datastream_id=c2d944e9-e4ed-48e2-bbdc-1a572810a332, Datastream_FullName=士校大池-2-F02-017-水位, Datastream_Description=士校大池-2, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
     "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
     "observedArea" : {
@@ -4819,67 +4941,6 @@
     "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(36)/ObservedProperty",
     "@iot.id" : 36,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(36)"
-  }, {
-    "name" : "淹水深度",
-    "description" : " Datastream_id=91a326bf-3311-41db-817c-409c4a043d02, Datastream_FullName=海佃路四段338巷2弄99號前(淹水站43)淹水深度, Datastream_Description=海佃路四段338巷2弄99號前(淹水站43)淹水深度測量, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
-    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
-    "observedArea" : {
-      "type" : "Point",
-      "coordinates" : [ 120.179365, 23.062378 ]
-    },
-    "phenomenonTime" : "2020-09-01T04:45:47.000Z/2020-09-01T15:45:47.000Z",
-    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)/Sensor",
-    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)/Thing",
-    "Thing" : {
-      "name" : "e6b94ce4-914a-4ec8-917e-78cc21a626df",
-      "description" : " 淹水監測站",
-      "properties" : {
-        "authority" : "臺南市政府水利局",
-        "authority_type" : "水利署（與縣市政府合建）",
-        "stationCode" : "3952500FL0037",
-        "stationName" : "海佃路四段338巷2弄99號前(淹水站43)",
-        "stationID" : "e6b94ce4-914a-4ec8-917e-78cc21a626df"
-      },
-      "Locations" : [ {
-        "name" : "e6b94ce4-914a-4ec8-917e-78cc21a626df",
-        "description" : " 淹水監測站",
-        "encodingType" : "address",
-        "location" : {
-  "type" : "Address",
-  "address" : "海佃路四段338巷2弄99號前"
-},
-        "@iot.id" : 3115,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(3115)"
-      }, {
-        "name" : "e6b94ce4-914a-4ec8-917e-78cc21a626df",
-        "description" : " 淹水監測站",
-        "encodingType" : "application/vnd.geo+json",
-        "location" : {"type":"Point","coordinates":[120.179365,23.062378]},
-        "@iot.id" : 3114,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(3114)"
-      } ],
-      "Locations@iot.count" : 2,
-      "@iot.id" : 1847,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1847)"
-    },
-    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)/Observations",
-    "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T15:45:47.000Z",
-      "resultTime" : null,
-      "result" : 0,
-      "@iot.id" : 11770210,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11770210)"
-    } ],
-    "Observations@iot.count" : 12,
-    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
-    "unitOfMeasurement" : {
-      "name" : "cm",
-      "symbol" : "cm",
-      "definition" : ""
-    },
-    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)/ObservedProperty",
-    "@iot.id" : 2818,
-    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2818)"
   }, {
     "name" : "淹水深度",
     "description" : " Datastream_id=8acc6656-0bdf-4f6e-9929-eba9cf74359e, Datastream_FullName=中豐路山頂段244號-F10-009-水位, Datastream_Description=中豐路山頂段244號, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
@@ -4939,7 +5000,7 @@
       "type" : "Point",
       "coordinates" : [ 121.788, 24.6899 ]
     },
-    "phenomenonTime" : "2020-09-01T04:33:13.000Z/2020-09-01T16:47:40.000Z",
+    "phenomenonTime" : "2020-09-01T04:33:13.000Z/2020-09-01T16:56:37.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1594)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1594)/Thing",
     "Thing" : {
@@ -4976,13 +5037,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1594)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:47:40.000Z",
+      "phenomenonTime" : "2020-09-01T16:56:37.000Z",
       "resultTime" : null,
       "result" : 0,
-      "@iot.id" : 11774488,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774488)"
+      "@iot.id" : 11775542,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775542)"
     } ],
-    "Observations@iot.count" : 106,
+    "Observations@iot.count" : 107,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1594)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "cm",
@@ -5102,7 +5163,7 @@
       "type" : "Point",
       "coordinates" : [ 120.187069, 23.425977 ]
     },
-    "phenomenonTime" : "2020-09-01T05:01:32.000Z/2020-09-01T16:41:34.000Z",
+    "phenomenonTime" : "2020-09-01T05:01:32.000Z/2020-09-01T17:01:19.000Z",
     "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1439)/Sensor",
     "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1439)/Thing",
     "Thing" : {
@@ -5139,13 +5200,13 @@
     },
     "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1439)/Observations",
     "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T16:41:34.000Z",
+      "phenomenonTime" : "2020-09-01T17:01:19.000Z",
       "resultTime" : null,
-      "result" : -67,
-      "@iot.id" : 11774528,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11774528)"
+      "result" : -69,
+      "@iot.id" : 11775466,
+      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11775466)"
     } ],
-    "Observations@iot.count" : 77,
+    "Observations@iot.count" : 78,
     "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1439)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
     "unitOfMeasurement" : {
       "name" : "dBm",
@@ -5593,56 +5654,5 @@
     "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1908)/ObservedProperty",
     "@iot.id" : 1908,
     "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(1908)"
-  }, {
-    "name" : "淹水深度",
-    "description" : " Datastream_id=c33ac3b4-4557-466a-9f74-8842bd9263fd, Datastream_FullName=文化二路138號-F07-004-水位, Datastream_Description=文化二路138號, Datastream_Category_type=淹水感測器, Datastream_Category=淹水深度",
-    "observationType" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
-    "observedArea" : {
-      "type" : "Point",
-      "coordinates" : [ 121.370358, 25.053535 ]
-    },
-    "phenomenonTime" : "2020-09-01T04:35:00.000Z/2020-09-01T14:30:00.000Z",
-    "Sensor@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2427)/Sensor",
-    "Thing@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2427)/Thing",
-    "Thing" : {
-      "name" : "c1aa4e38-0da4-4832-a16c-7de1096b0ffc",
-      "description" : "文化二路138號",
-      "properties" : {
-        "authority" : "桃園巿政府水務局(智慧防汛)",
-        "authority_type" : "水利署（與縣市政府合建）",
-        "stationCode" : "F07-004",
-        "stationName" : "文化二路138號",
-        "stationID" : "c1aa4e38-0da4-4832-a16c-7de1096b0ffc"
-      },
-      "Locations" : [ {
-        "name" : "c1aa4e38-0da4-4832-a16c-7de1096b0ffc",
-        "description" : "文化二路138號",
-        "encodingType" : "application/vnd.geo+json",
-        "location" : {"type":"Point","coordinates":[121.370358,25.053535]},
-        "@iot.id" : 2678,
-        "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Locations(2678)"
-      } ],
-      "Locations@iot.count" : 1,
-      "@iot.id" : 1590,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Things(1590)"
-    },
-    "Observations@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2427)/Observations",
-    "Observations" : [ {
-      "phenomenonTime" : "2020-09-01T14:30:00.000Z",
-      "resultTime" : null,
-      "result" : 0,
-      "@iot.id" : 11763064,
-      "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Observations(11763064)"
-    } ],
-    "Observations@iot.count" : 70,
-    "Observations@iot.nextLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2427)/Observations?$top=1&$skip=1&$orderby=phenomenonTime+desc",
-    "unitOfMeasurement" : {
-      "name" : "cm",
-      "symbol" : "cm",
-      "definition" : ""
-    },
-    "ObservedProperty@iot.navigationLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2427)/ObservedProperty",
-    "@iot.id" : 2427,
-    "@iot.selfLink" : "https://sta.ci.taiwan.gov.tw/STA_WaterResource_v2/v1.0/Datastreams(2427)"
   } ]
 }
