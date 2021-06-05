@@ -61,4 +61,6 @@ while(!empty($json['@iot.nextLink'])) {
     $pageFile = $rawPath . '/page_' . (++$pageCount) . '.json';
     file_put_contents($pageFile, json_encode($json,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 }
-file_put_contents(dirname(__DIR__) . '/docs/iot_water.json', json_encode($fc));
+if(!empty($fc['features'])) {
+    file_put_contents(dirname(__DIR__) . '/docs/iot_water.json', json_encode($fc));
+}
