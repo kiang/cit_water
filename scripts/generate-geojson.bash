@@ -26,7 +26,6 @@ while true; do
     .properties.unitOfMeasurement = .unitOfMeasurement.symbol |
     .properties.result            = .Observations[0].result |
     .properties.phenomenonTime    = .Observations[0].phenomenonTime |
-    .properties.address           = ([.Thing.Locations[] | select(.encodingType=="address")][0].location.address) |
     .geometry                     = ([.Thing.Locations[] | select(.encodingType=="application/vnd.geo+json")][0].location) |
     { type: "Feature", properties: .properties, geometry: .geometry }'
 done \
