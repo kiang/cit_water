@@ -32,7 +32,7 @@ foreach($json['value'] AS $thing) {
     $f['properties']['phenomenonTime'] = $thing['Observations'][0]['phenomenonTime'];
     $fc['features'][] = $f;
 }
-file_put_contents($pageFile, json_encode($json,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+// file_put_contents($pageFile, json_encode($json,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 while(!empty($json['@iot.nextLink'])) {
     $json = json_decode(file_get_contents($json['@iot.nextLink']), true);
     foreach($json['value'] AS $thing) {
