@@ -64,8 +64,8 @@ while(!empty($json['@iot.nextLink'])) {
         $f['properties']['phenomenonTime'] = $thing['Observations'][0]['phenomenonTime'];
         $fc['features'][] = $f;
     }
-    // $pageFile = $rawPath . '/page_' . (++$pageCount) . '.json';
-    // file_put_contents($pageFile, json_encode($json,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+    $pageFile = $rawPath . '/page_' . (++$pageCount) . '.json';
+    file_put_contents($pageFile, json_encode($json,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 }
 if(!empty($fc['features'])) {
     file_put_contents(dirname(__DIR__) . '/docs/iot_water.json', json_encode($fc));
